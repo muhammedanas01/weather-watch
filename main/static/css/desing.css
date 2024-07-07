@@ -1,0 +1,90 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* adjust the height as needed */
+  }
+
+.form-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* adjust the height as needed */
+  }
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: ;
+  box-shadow: ;
+}
+
+.table th {
+  background-color:transparent;
+  color: #FFEFD5;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px;
+}
+
+.table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px ;
+  color: white;
+}
+
+.table tr:hover {
+  background-color: #FFC0CB;
+}
+
+.table td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table caption {
+  caption-side: top;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.nav {
+  font-size: 1.5rem; /* increases font size of navbar */
+  padding: 1rem 2rem; /* adds padding to navbar */
+  background-color:  transparent; /* adds background color to navbar */
+  border-bottom: 2px solid #ccc; /* adds border to navbar */
+  height: 80px; /* sets a fixed height for the navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.nav-link.active {
+  font-weight: bold; /* makes "WeatherWatch" text bold */
+  font-size: 2rem; /* increases font size of "WeatherWatch" text */
+  position: relative;
+  top: -0.5rem; /* moves the element 0.5rem upwards from its original position */
+  color:  #FFE4C4;
+}
+
+
+
+
+
+  
+  

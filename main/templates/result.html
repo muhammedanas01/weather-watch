@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<table class="table">
+<th>
+  <tr>
+    <th>Date&Time</th>
+    <th>Rain-status</th>
+    <th>Sea level</th>
+    <th>Ground level</th>
+    <th>Humidity</th>
+    <th>Pressure</th>
+    <th>Wind Speed</th>
+    <th>City</th>
+    <th>Country</th>
+  </tr>
+</th>
+  <tbody>
+  {% for data in weather_info %}
+  <tr>
+    <td>{{ data.dt_txt }}</td>
+    <td>{{ data.weather.0.description }}</td>
+    <td>{{ data.main.sea_level }}</td>
+    <td>{{ data.main.grnd_level }}</td>
+    <td>{{ data.main.humidity }}</td>
+    <td>{{ data.main.pressure }}</td>
+    <td>{{ data.wind.speed }}</td>
+    <td>{{ place.name }}</td>
+    <td>{{ place.country  }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
